@@ -1,0 +1,48 @@
+body {
+  background: rgb(8, 8, 8);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1px;
+}
+
+.header {
+  background-color: white;
+  text-align: center;
+  color: black;
+}
+
+.card {
+  width: 150px;
+  font-weight: bold;
+  background-color: coral;
+  padding: 5px;
+  margin: 10px;
+  float: left;
+}
+.card-container {
+  margin: 0 auto;
+  width: fit-content;
+  clear: left;
+  height: fit-content;
+}
+.card-container a {
+  color: coral;
+}
+.card-container a:hover {
+  color: white;
+}
+.card h2 {
+  color: black;
+  font-weight: bolder;
+  /* font-size: 28px; */
+  text-decoration: underline;
+  margin-bottom: 1px;
+}
+.card li {
+  text-shadow: 2px 2px #241d1d;
+}

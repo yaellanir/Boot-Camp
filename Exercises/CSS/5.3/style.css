@@ -1,0 +1,16 @@
+
+      body {
+        background: rgb(8, 8, 8);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      .header {
+        background-color: white;
+        color: black;
+      }
+
+      .card {
+        width: 150px;
+        font-weight: bold;
+        background-color: coral;
+      }
