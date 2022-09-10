@@ -1,0 +1,208 @@
+@font-face {
+  font-family: brandon-grotesque;
+  src: url(brandon-grotesque-black.otf);
+}
+
+@font-face {
+  font-family: brandon-grotesque-light;
+  src: url(./brandon-grotesque-light.otf);
+}
+
+@font-face {
+  font-family: futuralightbt;
+  src: url(./futura\ light\ bt.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: rgba(29, 29, 29, 0.7);
+  font-family: brandon-grotesque;
+  font-size: 23px;
+  max-width: 100%;
+}
+
+header {
+  background-color: white;
+  height: 88px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+nav {
+  /* background-color: rgb(0, 153, 255); */
+  height: 100px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0px;
+}
+#nav-logo {
+  /* background-color: rgb(0, 255, 242); */
+  height: auto;
+  float: left;
+  width: 20%;
+  padding: 5px;
+  margin-top: 25px;
+}
+
+#nav-logo img {
+  height: 26px;
+}
+
+#hamburger {
+  /* background-color: rgb(0, 255, 98); */
+  width: 50px;
+  float: right;
+  padding: 5px;
+  margin-top: 25px;
+  visibility: hidden;
+}
+#hamburger a {
+  text-decoration: none;
+  color: black;
+}
+.headerbuttons {
+  font-size: 17px;
+  font-family: brandon-grotesque;
+  padding-top: 33px;
+  letter-spacing: 0.14em;
+  float: right;
+}
+
+.headerbuttons a {
+  padding-left: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.headerbuttons a:hover {
+  opacity: 0.5;
+}
+
+main {
+  /* background-color: rgb(227, 236, 146); */
+  /* height: 600px; */
+  padding-top: 50px;
+  /* max-width: 90%; */
+  margin: 50px 0;
+}
+
+.main-container {
+  /* background-color: rgb(240, 194, 134); */
+  /* height: 400px; */
+  margin: 0 auto;
+  /* padding: 50px; */
+  width: fit-content;
+}
+
+#crying-pic {
+  /* background-color: red; */
+  /* float: left; */
+  margin-right: 34px;
+  /* padding-right: 30px; */
+}
+
+#content {
+  /* background-color: pink; */
+  float: right;
+  padding: 80px 0 20px 0;
+  /* padding-left: 100px; */
+  text-align: center;
+  font-weight: bold;
+}
+#content h1 {
+  /* background-color: pink; */
+  text-align: center;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 51px;
+  letter-spacing: 0.29em;
+  line-height: 1em;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  color: black;
+}
+
+#content p {
+  font-family: futuralightbt;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1.7em;
+  color: rgba(29, 29, 29, 0.7);
+}
+
+footer {
+  /* background-color: black; */
+  padding: 15px 0;
+}
+
+.footer-container {
+  /* background-color: grey; */
+  margin: auto;
+  width: 80%;
+}
+
+.social-icons {
+  font-size: 16px;
+  /* background-color: rgb(183, 134, 240); */
+  margin: 5px auto;
+  padding: 15px;
+  width: fit-content;
+}
+
+.social-icons img:hover {
+  opacity: 0.5;
+}
+
+.social-icons img {
+  height: 22px;
+  margin-right: 20px;
+}
+
+.links {
+  /* background-color: rgb(208, 180, 240); */
+  margin: 5px auto;
+  padding: 10px;
+  width: fit-content;
+  text-align: center;
+  font-family: brandon-grotesque-light;
+  color: rgba(29, 29, 29, 0.7);
+  font-size: 14px;
+  letter-spacing: 0.29em;
+  line-height: 1.7em;
+}
+
+#copyright {
+  font-family: brandon-grotesque-light;
+  color: rgba(29, 29, 29, 0.7);
+  font-size: 13px;
+  margin: 5px auto;
+  padding: 5px;
+  letter-spacing: 0.29em;
+  width: fit-content;
+  text-align: center;
+}
+
+@media (max-width: 1460px) {
+  .headerbuttons {
+    visibility: hidden;
+  }
+  #hamburger {
+    visibility: visible;
+  }
+}
+@media (max-width: 1075px) {
+  #crying-pic {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    scale: 1.4;
+  }
+  #content {
+    float: none;
+    margin: 0 auto;
+  }
+}
