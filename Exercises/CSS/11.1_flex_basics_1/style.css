@@ -1,0 +1,22 @@
+body {
+  background-color: lightyellow;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+}
+
+.box1 {
+  background-color: green;
+}
+
+.box2 {
+  background-color: blue;
+}
+
+.box3 {
+  background-color: red;
+}

@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightyellow;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+}
+
+.box1 {
+  background-color: green;
+}
+
+.box2 {
+  background-color: blue;
+}
+
+.box3 {
+  background-color: red;
+}

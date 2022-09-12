@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* font-size:62.5%; */
 }
 
 body {
@@ -20,10 +21,12 @@ header {
 }
 
 nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
   margin: 0 auto;
-  max-width: 90%;
-  overflow: auto;
-  padding: 0 20px;
 }
 
 nav a {
@@ -35,10 +38,13 @@ nav a {
 }
 
 #navlogo {
-  float: left;
-  padding-top: 20px;
+  /* float: left; */
+  /* padding-top: 20px; */
 }
-
+.hamburger {
+  visibility: hidden;
+  position: absolute;
+}
 main {
   margin-top: 150px;
 }
@@ -47,7 +53,7 @@ main {
   font-size: 80px;
 }
 
-.headerbuttons a:hover ,
+.headerbuttons a:hover,
 .headerbuttons a.current {
   color: coral;
 }
@@ -83,4 +89,28 @@ ul li {
 }
 .card li {
   text-shadow: 2px 2px #241d1d;
+}
+
+@media (max-width: 768px) {
+  .card {
+    float: none;
+    margin-top: 20px;
+  }
+  #main-title {
+    font-size: 50px;
+  }
+
+  .headerbuttons {
+    visibility: hidden;
+  }
+  .hamburger {
+    visibility: visible;
+    position: static;
+  }
+  .hamburger a {
+    color: coral;
+  }
+  #about p {
+    font-size: small;
+  }
 }

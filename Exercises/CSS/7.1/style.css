@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(79, 94, 143);
+}
+
+.flatRegister {
+  background-color: rgb(88, 142, 212);
+  color: white;
+  font-size: 20px;
+  border-style: none;
+  padding: 10px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.flatSubmit {
+  background-color: rgb(243, 220, 90);
+  color: white;
+  font-size: 13px;
+  border-style: none;
+  padding: 10px;
+}
+
+.roundRegister {
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  border-style: none;
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.roundSubmit {
+  background-color: red;
+  color: white;
+  font-size: 13px;
+  border-style: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.flatghostRegister {
+  border: 1px solid;
+  border-color: red;
+  color: white;
+  font-size: 20px;
+  background-color: transparent;
+  padding: 10px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.flatghostSubmit {
+  border: 1px solid rgb(187, 90, 243);
+  color: white;
+  font-size: 13px;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.roundghostRegister {
+  border: 1px solid;
+  border-color: yellow;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  background-color: transparent;
+  padding: 10px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.roundghostSubmit {
+  border: 1px solid aqua;
+  color: white;
+  font-size: 13px;
+  border-radius: 20px;
+  background-color: transparent;
+  padding: 10px;
+}
