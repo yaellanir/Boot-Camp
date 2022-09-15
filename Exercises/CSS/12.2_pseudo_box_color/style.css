@@ -1,0 +1,21 @@
+body {
+  margin-left: 400px;
+  margin-top: 300px;
+}
+
+.box {
+  background-color: purple;
+  width: 100px;
+  height: 200px;
+  display: flex;
+  position: relative;
+}
+
+.box:after {
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 50px;
+  height: 200px;
+  margin-left: 100px;
+}

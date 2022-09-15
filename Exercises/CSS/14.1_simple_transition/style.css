@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(36, 34, 34);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.box1 {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.box1::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transform: translateX(100px);
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.box1:hover::after {
+  position: absolute;
+  transform: translateX(0px);
+}

@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --primary-background-color: black;
+  --primary-text-color: white;
+  --secondary-text-color: coral;
+  --headline-card-color: black;
+  --secondary-highlight-color: coral;
+
+  /* font-size:62.5%; */
+}
+
+body {
+  background: var(--primary-background-color);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+header {
+  background-color: var(--primary-background-color);
+  height: 88px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav a {
+  float: right;
+  padding: 20px 20px;
+  color: var(--primary-text-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#navlogo {
+  /* float: left; */
+  /* padding-top: 20px; */
+}
+.hamburger {
+  visibility: hidden;
+  position: absolute;
+}
+main {
+  margin-top: 150px;
+}
+
+#main-title {
+  font-size: 80px;
+}
+
+.headerbuttons a:hover,
+.headerbuttons a.current {
+  color: var(--secondary-text-color);
+}
+ul li {
+  list-style: none;
+}
+.card {
+  width: 150px;
+  font-weight: bold;
+  background-color: var(--secondary-highlight-color);
+  padding: 5px;
+  margin: 10px;
+  float: left;
+}
+.card-container {
+  margin: 0 auto;
+  width: fit-content;
+  clear: left;
+  height: fit-content;
+}
+.card-container a {
+  color: var(--secondary-highlight-color);
+}
+.card-container a:hover {
+  color: var(--primary-text-color);
+}
+.card h2 {
+  color: var(--headline-card-color);
+  font-weight: bolder;
+  /* font-size: 28px; */
+  text-decoration: underline;
+  margin-bottom: 1px;
+}
+.card li {
+  text-shadow: 2px 2px #241d1d;
+}
+
+@media (max-width: 768px) {
+  .card {
+    float: none;
+    margin-top: 20px;
+  }
+  #main-title {
+    font-size: 50px;
+  }
+
+  .headerbuttons {
+    visibility: hidden;
+  }
+  .hamburger {
+    visibility: visible;
+    position: static;
+  }
+  .hamburger a {
+    color: var(--secondary-highlight-color);
+  }
+  #about p {
+    font-size: small;
+  }
+}
