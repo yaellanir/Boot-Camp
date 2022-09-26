@@ -58,7 +58,9 @@ a {
 p {
   margin: 10px;
 }
-
+audio {
+  width: 100px;
+}
 /* nav bar styling */
 #navbar {
   background-color: #333;
@@ -97,7 +99,7 @@ section {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  width: 450px;
 }
 
 #navbar ul li a:hover {
@@ -356,14 +358,15 @@ h2 img {
 .skills h3 {
   font-family: exsospace;
   font-size: 3rem;
-  padding-top: 10px;
+  padding: 10px;
   margin-left: 10px;
   height: 3rem;
   background-color: #00dbde;
   background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
-    -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-weight;
+  font-weight: 900;
 }
 
 .skills-logos {
@@ -384,7 +387,7 @@ h2 img {
 .fa-music {
   background-color: #00dbde;
   background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
-
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -544,6 +547,7 @@ h2 img {
   justify-content: center;
   align-items: center;
   font-size: 48px;
+  padding-bottom: 50px;
 }
 .social-links {
   /* background-color:white; */
@@ -561,19 +565,10 @@ h2 img {
 }
 
 @media (max-width: 760px) {
-  #navbar ul li a {
-    display: none;
-  }
-  #navbar .hamburger {
-    display: block;
-    padding-right: 20px;
-    font-size: 20px;
-  }
   #gamebar2 h2 {
     font-size: 18px;
-    
   }
-  
+
   .text-box {
     width: 90%;
   }
@@ -584,11 +579,14 @@ h2 img {
     width: 70%;
   }
   .card-text-container {
-    display:none;
-    
+    display: none;
   }
 }
-
+@media (max-width: 570px) {
+  .skills-logos {
+    width: 100%;
+  }
+}
 @media (max-width: 420px) {
   .rickmortypic {
     width: 240px;
@@ -624,5 +622,16 @@ h2 img {
 
   .form-wrap h1 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 950px) {
+  #navbar ul {
+    display: none;
+  }
+  #navbar .hamburger {
+    display: block;
+    padding-right: 20px;
+    font-size: 20px;
   }
 }
