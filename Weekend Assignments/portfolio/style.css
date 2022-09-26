@@ -1,0 +1,562 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-background-color: #111;
+  --primary-text-color: #fff;
+  --secondary: aquamarine;
+  --headline-card-color: black;
+  --secondary-highlight-color: lightcoral;
+}
+@font-face {
+  font-family: starwarsfull;
+  src: url(./fonts/Starjedi.ttf);
+}
+
+@font-face {
+  font-family: starwarshole;
+  src: url(./fonts/Starjhol.ttf);
+}
+
+@font-face {
+  font-family: starwarsout;
+  src: url(./fonts/Starjout.ttf);
+}
+
+@font-face {
+  font-family: spaceinvaders;
+  src: url(./fonts/space_invaders.ttf);
+}
+@font-face {
+  font-family: exsospace;
+  src: url(./fonts/Exo\ Space\ DEMO.ttf);
+}
+
+html {
+  /* cursor: url(./images/rocket_launch_FILL0_wght400_GRAD0_opsz48.png),auto; */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  color: var(--primary-color);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7em;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+p {
+  margin: 10px;
+}
+
+/* nav bar styling */
+#navbar {
+  background-color: #333;
+  color: var(--primary-text-color);
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+.logo {
+  padding: 20px;
+}
+section {
+  max-width: 100vw;
+  min-height: 100vh;
+}
+#navbar h2 a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+#navbar h2 a:hover {
+  color: rgb(250, 180, 192);
+}
+
+#navbar ul {
+  list-style: none;
+  color: var(--primary-text-color);
+  font-weight: bold;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+#navbar ul li a:hover {
+  color: var(--secondary);
+  font-size: 18px;
+}
+
+#navbar ul li :current {
+  background-color: var(--primary-background-color);
+  color: var(--secondary);
+  font-size: 18px;
+}
+
+.hamburger {
+  display: none;
+}
+#gamebar2 {
+  /* ??????? */
+  color: var(--primary-text-color);
+  text-shadow: 2px 2px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+#gamebar2 h2 {
+  font-family: exsospace;
+  font-size: 40px;
+}
+
+.main1 {
+  background-image: url(./images/pinkorange.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* rickmortyme */
+.rickmortypic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  height: 350px;
+  width: 290px;
+  /* background: radial-gradient(circle closest-side, white 80%, #0000); */
+  border-radius: 0 0 50% 50%;
+  overflow: hidden;
+  position: relative;
+}
+.circle {
+  border: 1px solid var(--secondary);
+  border-radius: 50%;
+  color: var(--primary-text-color);
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  bottom: 0;
+}
+.rickmortypic img {
+  position: relative;
+  top: 30%;
+  height: 400px;
+}
+/* text of first page */
+
+.myname {
+  color: var(--primary-text-color);
+  padding-top: 30px;
+  font-size: 5rem;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px black;
+  font-family: exsospace;
+}
+
+span {
+  color: rgb(226, 140, 105);
+  font-size: 4rem;
+  text-shadow: 3px 3px black;
+}
+
+.pinkspan {
+  font-size: 2rem;
+  color: rgb(250, 180, 192);
+  text-shadow: 2px 2px black;
+}
+
+.main1 p {
+  color: var(--primary-text-color);
+  font-size: 2rem;
+  letter-spacing: 3px;
+  padding: 5px;
+  text-shadow: 2px 2px black;
+}
+
+.spaceinvader2 {
+  height: 50px;
+  bottom: 5%;
+  position: absolute;
+  animation: infinite linear;
+  animation-name: run;
+  animation-duration: 10s;
+}
+@keyframes run {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 100px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/* about */
+
+#about {
+  background-image: url(./images/purplecaroon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--primary-background-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.spaceship {
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: infinite linear;
+  animation-name: ship;
+  animation-duration: 15s;
+  transform: rotate(30deg);
+}
+@keyframes ship {
+  from {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-30vh, -80vh) rotate(-30deg);
+  }
+  50% {
+    transform: translate(-75vw, -80vh) rotate(-100deg);
+  }
+  75% {
+    transform: translate(-80vw, 0) rotate(-190deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-360deg);
+  }
+}
+
+h2 img {
+  height: 50px;
+  margin-right: 50px;
+  margin-bottom: -10px;
+}
+/* 
+.about{
+  display:flex;
+
+}
+.about-container{
+  flex-direction: row;
+  justify-content: space-between;
+} */
+
+.text-box {
+  box-shadow: 0px 4px 8px 0px #7fffd4;
+  /* background-color: #333; */
+  opacity: 0.9;
+  transition: 0.6s;
+  width: 60%;
+  margin: 10% auto;
+  padding: 5%;
+}
+.about h2 {
+  font-family: exsospace;
+  justify-content: center;
+  align-items: center;
+  color: rgb(193, 253, 233);
+  font-size: 3.5rem;
+  text-shadow: 3px 3px black;
+  font-weight: 600;
+  border-bottom: 1px dotted rgb(193, 253, 233);
+}
+
+.text-box p img {
+  height: 25px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.about p {
+  color: var(--primary-text-color);
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 2rem;
+}
+.skills {
+  background-image: url(./images/greencartoon.jpg);
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills h3 {
+  font-family: exsospace;
+  font-size: 3rem;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.skills-logos {
+  /* color:rgb(228, 153, 119); */
+  color: white;
+  /* background-color: #333; */
+  opacity: 0.8;
+  width: 50%;
+  font-size: 100px;
+  padding: 30px;
+  text-align: center;
+  height: 100%;
+  text-shadow: 5px 5px black;
+}
+
+.skills img {
+  bottom: 0;
+  width: 30%;
+  z-index: 1;
+}
+
+.projects {
+  background-image: url(./images/bluecartton.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 4rem 0;
+}
+
+.projects h2 {
+  color: pink;
+  font-family: exsospace;
+  font-size: 4rem;
+  text-shadow: 2px 2px aquamarine;
+  letter-spacing:4px;
+}
+.card-container {
+  background-color: aquamarine;
+  opacity: 0.9;
+  width: 70%;
+  box-shadow: 15px 15px 5px pink;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  gap: 2rem;
+}
+
+.proj-img-wrapper {
+  height: 280px;
+
+  /* overflow: hidden; */
+}
+.project-img {
+  width: 100%;
+}
+.card {
+  background-color: white;
+  box-shadow: 5px 6px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: 1s;
+  width: 40%;
+  overflow: hidden;
+}
+.card .card-text-container {
+  text-align: center;
+  padding: 1rem;
+  z-index: 1;
+  position: relative;
+  padding: 0.5rem;
+  background-color: rgb(245, 198, 206);
+}
+
+.card-text-container h4 {
+  font-size: 1.7rem;
+  color: var(--primary-text-color);
+  text-shadow: 2px 2px 2px black;
+}
+.card-text-container p {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: rgb(72, 63, 197);
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px 0 rgba(120, 134, 104, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+/* contact */
+.contact {
+  background-image: url(./images/zimpurple.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-color: var(--primary-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrap {
+  background-color: var(--primary-text-color);
+  border-radius: 5px;
+  max-width: 400px;
+  /* color: aquamarine; */
+  padding: 15px 25px 45px 15px;
+  color: #333;
+}
+
+.form-wrap h1,
+.form-wrap p {
+  text-align: center;
+}
+.form-wrap h1 {
+  font-family: exsospace;
+  font-size: 3rem;
+}
+
+.form-wrap .form-group {
+  margin-top: 15px;
+}
+
+.form-wrap .form-group label {
+  display: block;
+  color: aquamarine;
+}
+
+.form-wrap .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: #ddd 1px solid;
+  border-radius: 5px;
+}
+
+.form-wrap button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: aquamarine;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.form-wrap button:hover {
+  color: lemonchiffon;
+}
+
+.form-wrap .bottom-text {
+  font-size: 13px;
+  /* margin-top: 20px; */
+}
+.skills-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+}
+.social-links {
+  /* background-color:white; */
+  margin: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: rgb(188, 253, 232);
+  font-size: 30px;
+
+}
+
+@media (max-width: 760px) {
+  #navbar ul li a {
+    display: none;
+  }
+  #navbar .hamburger {
+    display: block;
+    padding-right: 20px;
+    font-size: 20px;
+  }
+  #gamebar2 h2 {
+    font-size: 18px;
+  }
+  .text-box {
+    width: 90%;
+  }
+  .card-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+  }
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 420px) {
+  .rickmortypic {
+    width: 240px;
+  }
+  .circle {
+    width: 240px;
+  }
+  .myname {
+    font-size: 2em;
+  }
+  .main1 p {
+    text-align: center;
+  }
+  #gamebar2 h2 {
+    max-width: 50%;
+  }
+  .about h2 {
+    font-size: 2.5rem;
+  }
+  .text-box h2 img{
+    margin-right:5px;
+  }
+  .text-box p{
+    font-size: 1.3rem;
+  }
+  .spaceship {
+    width: 70px;
+  }
+  .form-wrap h1{
+    font-size: 2rem;
+  }
+}
+
