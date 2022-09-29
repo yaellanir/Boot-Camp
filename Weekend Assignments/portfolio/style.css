@@ -230,8 +230,8 @@ span {
 }
 
 .spaceinvader2 {
-  height: 50px;
-  bottom: 5%;
+  height: 40px;
+  bottom: 2%;
   position: absolute;
   animation: infinite linear;
   animation-name: run;
@@ -588,6 +588,9 @@ h2 img {
   }
 }
 @media (max-width: 420px) {
+  /* .spaceinvader2{
+    width:50px;
+  } */
   .rickmortypic {
     width: 240px;
   }
