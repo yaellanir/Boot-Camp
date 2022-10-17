@@ -38,7 +38,8 @@ const school = {
     },
   ],
   findPerson: function (type, id) {
-    return this[type].find((e) => e.id === id);
+    const person = this[type].find((e) => e.id === id);
+    return person;
   },
   assignStudent: function (subject, id) {
     const teacherIndex = this.teachers.findIndex((teacher) => {
@@ -51,9 +52,26 @@ const school = {
     this.teachers[teacherIndex].students.push(student.name);
     this.teachers[teacherIndex].capacityLeft -= 1;
   },
+  assignTeachersSubject: function (newsubject, id) {
+    const teacher = this.teachers.find((e, i, array) => {
+      return e.id === id;
+    });
+    if (!teacher.subjects.includes(newsubject)) {
+      teacher.subjects.push(newsubject);
+    }
+  },
+  addGradeAvgStudent: function (id, avgGrade) {
+    let student = this.students.find((e) => {
+      return e.id === id;
+    });
+    student.avgGrade = avgGrade;
+  },
 };
 
 school.findPerson("teachers", 1);
 school.assignStudent("history", 12);
-
+school.assignTeachersSubject("yousuck", 1);
+school.assignTeachersSubject("biology", 1);
 console.log(school.teachers);
+school.addGradeAvgStudent(12, 55);
+console.log(school.students);

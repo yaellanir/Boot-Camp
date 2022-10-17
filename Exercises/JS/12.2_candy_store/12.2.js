@@ -47,15 +47,6 @@ addCandy(candyStore, "1234fse", "the-candy", 5);
 
 console.log(candyStore.candies);
 
-// function buyCandy(candyStore, id) {
-//   let price = candyStore.candies.find((e) => e.id === id).price;
-//   array.forEach((element) => {
-//     element.amount - 1;
-//   });
-//   let newRegister = cashRegister + price;
-//   return newRegister;
-// }
-
 function buyCandy2(candyStore, id) {
   let candyIndex = candyStore.candies.findIndex((e) => e.id === id);
   let candy = candyStore.candies[candyIndex];

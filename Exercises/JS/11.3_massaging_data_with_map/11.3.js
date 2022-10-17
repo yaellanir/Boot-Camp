@@ -16,14 +16,6 @@ const data = [
     },
   },
   {
-    name: "Mary",
-    birthday: "1-10-1977",
-    favoriteFoods: {
-      meats: ["ham", "chicken"],
-      fish: ["pike"],
-    },
-  },
-  {
     name: "Thomas",
     birthday: "1-10-1990",
     favoriteFoods: {
@@ -48,18 +40,39 @@ function namesFromArray(arr) {
 console.log(namesFromArray(data));
 
 function bornBefore1990(arr) {
-  const newArray = arr.map((e, i) => {
-
+  let filteredArr = arr.filter((e) => {
+    let year = e.birthday.substr(-4);
+    if (year < 1990) {
+      return true;
+    } else {
+      return false;
+    }
   });
-  return newArray;
-    
+  // let filteredShort = arr.filter((e)=> e.birthday.substr(-4) < 1990)
+  let names = filteredArr.map((e) => e.name);
+  return names;
+}
+console.log(bornBefore1990(data));
+
+function newObjectFromFoodsWithCounts(arr) {
+  const foodObj = {};
+  arr.forEach((element) => {
+    element.favoriteFoods.meats.forEach((eMeat) => {
+      if (foodObj[eMeat]) {
+        foodObj[eMeat]++;
+      } else {
+        foodObj[eMeat] = 1;
+      }
+    });
+    element.favoriteFoods.fish.forEach((eFish) => {
+      if (foodObj[eFish]) {
+        foodObj[eFish]++;
+      } else {
+        foodObj[eFish] = 1;
+      }
+    });
+  });
+  return foodObj;
 }
 
-function foods(arr) {
-  const newArray = arr.map((e, i) => {
-    console.log(e.fish);
-    return { meats: e.favoriteFoods.meats, fish: e.favoriteFoods.fish}
-  })
-  return newArray;  
-}
-console.log(foods(data));
+console.log(newObjectFromFoodsWithCounts(data));

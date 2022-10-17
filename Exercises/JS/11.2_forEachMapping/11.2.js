@@ -62,11 +62,12 @@ function vowelCount(str) {
 console.log(vowelCount("i love appleseeds thank you"));
 
 function capitalize(str) {
-  const capitalizedString = str
-    .split("")
-    .map((element, i) => element.toUpperCase())
-    .join("");
-  return capitalizedString;
+  // const capitalizedString = str
+  //   .split("")
+  //   .map((element, i) => element.toUpperCase())
+  //   .join("");
+  return str.toUpperCase();
+  // return capitalizedString;
 }
 
 console.log(capitalize("i love appleseeds thank you"));

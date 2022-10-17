@@ -1,0 +1,19 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: arial;
+}
+img{
+  height: 400px;
+}
+.off{
+  image: url(./off.png)
+}
+
+.on{
+  image: url(./on.png)
+  /* visibility:hidden; */
+  
+}

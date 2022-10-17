@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inputs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  input {
+  border-radius: 5px;
+  width:2rem;}

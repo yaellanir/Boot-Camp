@@ -1,0 +1,18 @@
+const li = document.querySelector(".start-here");
+const newLi = document.createElement("li");
+const nestedUl = document.querySelectorAll("ul")[1];
+// console.log(nestedUl);
+li.innerText = "main title";
+nestedUl.appendChild(newLi);
+newLi.innerText = "sub title 4";
+// const title3 = document.querySelectorAll("ul")[3]; title3.remove();
+const mainUl = document.querySelectorAll("ul")[0];
+const title3 = document.querySelectorAll("li")[7];
+title3.remove();
+// console.log(title3);
+const doctypeTitle = document.querySelector("title");
+doctypeTitle.innerText = "Master Of The Dom";
+// console.log(doctypeTitle);
+const p = document.querySelector("p");
+p.innerText = "this is a new paragraph!!!";
+console.log(p);
