@@ -1,0 +1,65 @@
+body {
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+.landing-page{
+height:100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: #333;
+}
+
+.landing-page h1{
+font-size: 40px;
+color:whitesmoke;
+text-shadow: 2px 2px rgb(242, 130, 148);
+
+}
+
+
+.landing-page button{
+  width: 100px;
+  height: 50px;
+  border-radius: 10%;
+  color:rgb(242, 130, 148);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn-container{
+  height:100px;
+gap:5px;
+}
+
+.elements-btn{
+padding:5px;
+font-size: 14px;
+margin: 5px;
+}
+.statistics{
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.statistics h1{
+  font-size: 50px;
+  text-shadow: 2px 2px rgb(242, 130, 148);
+  color:#333;
+}
+.chartcontainer #myChart {
+  margin-top:20px;
+  /* max-width: 400px;
+  max-height: 400px; */
+}
+.spinner{
+  color: blue;
+}
