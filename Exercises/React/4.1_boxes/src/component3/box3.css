@@ -1,0 +1,7 @@
+.pinkbox{
+  background-color:lightpink;
+  width: 350px;
+  height: 250px;
+  gap: 5px;
+  flex-direction: column;
+}

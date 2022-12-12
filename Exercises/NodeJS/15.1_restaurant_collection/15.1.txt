@@ -1,0 +1,58 @@
+1. -- use findMyRestaurants
+
+2.  db.restaurants.insertOne({
+    name: 'nafis',
+    city: 'holon',
+    street: 'kadman 14',
+    coordinates: [ '-4561', '2568' ],
+    type: 'kosher',
+    reviews: [ 'wonderful food', 'ewwwwwww', 'very cheap and not tasty' ],
+    date: new Date(),
+    score: 5
+  })
+
+3.db.restaurants.insertMany([
+    {
+    _id: ObjectId("6395fcd07187c101fc971dd0"),
+    name: 'mamas',
+    city: 'rihon lezion',
+    street: 'almogim 30',
+    coordinates: [ '561', '256' ],
+    type: 'non kosher',
+    reviews: [ 'amazing', 'wow', 'the best food in the world' ],     
+    date: '23.5.21',
+    score: 10
+  },
+  {
+    _id: ObjectId("6395fcd07187c101fc971dd1"),
+    name: 'men ten ten',
+    city: 'tel aviv',
+    street: 'kadman 14',
+    coordinates: [ '451', '248' ],
+    type: 'kosher',
+    reviews: [ 'great', 'yummy', 'would go again' ],
+    date: new Date(),
+    score: 8
+  },
+  {
+    _id: ObjectId("6395fdda7187c101fc971dd2"),
+    name: 'franchesca',
+    city: 'rihon lezion',
+    street: 'yam 3',
+    coordinates: [ '56451', '45256' ],
+    type: 'kosher',
+    reviews: [ 'not good', 'shit food', 'expencive' ],
+    date: new Date(),
+    score: 4
+  },
+  {
+    _id: ObjectId("6395fdda7187c101fc971dd3"),
+    name: 'blablabla',
+    city: 'tel aviv',
+    street: 'balfur45',
+    coordinates: [ '456', '2584' ],
+    type: 'not kosher',
+    reviews: [ 'very yummy', 'holy shit this is good', 'wonderful' ],    date: 'ISODate(10-11-2022)',
+    score: 9
+  },
+])

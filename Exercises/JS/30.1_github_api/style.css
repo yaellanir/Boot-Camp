@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display:flex;
+  flex-direction: column;
+  color: white;
+  background-color: #333;
+justify-content: center;  
+align-items: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.cardContainer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+  .card {
+    margin-top: 50px;
+      /* background-color: black; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* display:none; */
+      height: 400px;
+      width: 250px;
+  }
+
+.nameOfUser{
+  color:aqua;
+  font-size: 25;
+}
+.number-of-public-repos{
+    color:white; 
+    font-size: 25px;
+  }
+  .avatarImg{
+    height: 150px;
+  }
+  a{
+    color: white;
+  }

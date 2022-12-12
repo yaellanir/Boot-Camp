@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+#signupForm {
+  width: 300px;
+  height: 500px;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+input {
+  color: #333;
+  height: 40px;
+  border: 4px solid lightcoral;
+}
+.confirm-change {
+  display: flex;
+  display: none;
+}
+.confirm-change .btn {
+  width: 80px;
+  background-color: coral;
+  color: white;
+  border: 1px solid white;
+  padding: 5px;
+  margin: 5px;
+}
+.btn {
+  color: #333;
+}
+
+.btnShow {
+  display: block;
+}
+
+.newTextBox {
+  width: 100px;
+  height: 50px;
+}
+
+.text {
+  color: aqua;
+}

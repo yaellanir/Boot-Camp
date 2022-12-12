@@ -1,0 +1,61 @@
+body {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  height:100vh;
+  background-color: black;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.box{
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+color: aqua;
+background-color: #333;
+border: 3px solid white;
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+.stop-watch{
+  display:flex;
+  gap: 1em;
+}
+
+h1 {
+  color:aqua;
+  }
+
+  h2{
+    color:white;
+  }
+
+  .buttons-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap: 1em;
+    width: 100vw;
+      }
+
+      .btn {
+        width:25%;
+        height:30px;
+        background-color:aqua;
+        
+      }
+
+      .stop{
+        background-color: rgb(221, 50, 50)
+      }
+      .start{
+        background-color: rgb(47, 255, 57)
+      }

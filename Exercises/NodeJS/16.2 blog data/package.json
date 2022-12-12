@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "mongodb": "^4.12.1"
+  },
+  "name": "16.2-blog-data",
+  "version": "1.0.0",
+  "main": "mongodb.js",
+  "type":"module",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

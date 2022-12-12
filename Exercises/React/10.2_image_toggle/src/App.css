@@ -1,0 +1,26 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.myApp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.blackPhoto {
+  width: 500px;
+}
+
+.colorPhoto{
+  background-image: url(./photos/color.jpg)
+  /* image: url(./photos/color.jpg) */
+  /* display:none, */
+}
