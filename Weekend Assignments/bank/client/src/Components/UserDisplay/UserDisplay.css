@@ -1,0 +1,9 @@
+.userDisplay-card{
+height: 100px;
+width: 200px;
+background-color: white;
+gap: 5px;
+padding: 5px;
+margin: 10px;
+color: black;
+}
